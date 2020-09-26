@@ -1,0 +1,316 @@
+@font-face{
+  font-family: "Times";
+  src: url("../fonts/Aeonik-Regular.otf");
+}
+@font-face{
+  font-family: "Ogg";
+  src: url("../fonts/Ogg-Roman.otf");
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+/* .navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  font-size: 40px;
+  padding: 40px;
+  padding-right: 80px;
+ } */
+ .navbar {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: right; */
+  font-size: 40px;
+  padding: 40px;
+  padding-right: 80px;
+  padding-top: 0;
+ }
+ .space {
+   padding-right: 20px;
+ }
+ul {
+  display: flex;
+  list-style-type: none;
+}
+.background:{
+  background-color: gray;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+h1 {
+  font-family: "Ogg";
+  font-size: 88px;
+  line-height: 100px;
+  color: white;
+}
+
+.projects-container {
+  padding-left: 8px;
+  padding-right: 8px;
+  /* width: 96%;
+  margin: 0 auto; */
+}
+
+.project {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.project-image {
+  max-width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color:white;
+  }
+
+a:hover {
+  color: grey;
+}
+/*meter botones*/
+button {
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px white;
+  border-radius: 20px;
+  font-size: 16px;
+}
+button:hover {
+  background-color: rgb(56, 56, 56);
+color: white;
+}
+
+h3 {
+  font-family: "Ogg";
+  font-size: 40px;
+  color: white;
+}
+
+
+p {
+  color: white;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.icons-container {
+  display: none;
+}
+
+
+/* OJO — Para pintar estilos para mobile */
+@media only screen and (max-width: 769px)
+{
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 0;
+    }
+    #hello {
+      width: 10%;
+    }
+    .projects-container {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .row {
+      display: flex;
+      flex-flow: column;
+    }
+    .project {
+      width: 100%;
+      margin-bottom: 80px;
+    }
+  .projects-container {
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 90%;
+  }
+    footer {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 45px;
+    padding-top: 400px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: white;
+    text-align: center;
+  }
+  h3 {
+    font-size: 22px;
+    line-height: 32px;
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    }
+  p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+    }
+    button {
+    margin-top: 24px;
+    }
+  ul {
+    padding: 0;
+  }
+  .project {
+    /* display: flex; */
+    align-items: center;
+  }
+  footer {
+    padding-left: 0;
+    margin-left: 20px;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header {
+    height: 100vh;
+    padding: 0;
+  }
+  .project-image {
+    width: 100%;
+  }
+
+  .project-info {
+    width: 50%;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .credit {
+    font-size: 22px;
+    line-height: 18px;
+    margin-top: 6px;
+  
+  }
+}
+
+/*Esta media es para desktop*/
+@media only screen and (min-width: 769px)
+{
+  h1 {
+    font-family: "Ogg";
+    font-size: 100px;
+    line-height: 110px;
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 320px;
+    text-align: center;
+  }
+  #hello {
+    width: 8%;
+  }
+  header {
+    height: 100vh;
+    padding: 0;
+  }
+  .projects-container {
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-top: 200px;
+  }
+  
+  .project {
+    display: flex;
+    align-items: center;
+  }
+  
+  .project-image {
+    max-width: 50%;
+  }
+  .project {
+    display: flex;
+    align-items: center;
+  }
+.project-info {
+margin-left: 80px;
+margin-right: 40px;
+}
+h3 {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+button {
+  margin-top: 10px;
+  }
+/*FOOTER*/
+footer {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-text {
+  margin-bottom: 32px;
+  margin-left: 80px;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.credit{
+  margin-top: 8px;
+  font-size: 40px;
+}
+.icons-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons-container a {
+  text-decoration: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  }
+.space {
+  padding-left: -40px;
+}
+ul {
+  padding-left: 0px;
+}
+@media all and (min-width:601px){
+	header, footer {
+		cursor: url("../images/arrow_ES4.ico"), 150px, 150px;
+	}
+	header a, footer a {
+		cursor: url("../images/arrow_ES4.ico"), pointer;
+	}
+    html {
+		cursor: url("../images/arrow_ES4.ico"), pointer;
+	}
+	.home #galeria>div {
+		cursor: url("../images/arrow_ES4.ico"), w-resize;
+	}
+
+}

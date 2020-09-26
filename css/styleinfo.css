@@ -1,0 +1,335 @@
+@font-face{
+  font-family: 'Times';
+  src: url("../fonts/Aeonik-Regular.otf");
+}
+@font-face{
+  font-family: "Ogg";
+  src: url("../fonts/Ogg-Roman.otf");
+}
+header, footer, body {
+  padding: 0;
+  margin: 0;
+    background-color: rgb(90, 90, 90);
+}
+
+header {
+    width: 100%;
+    background-position: center;
+    height: 100vh;
+  }
+  ol {
+    font-size: 24px;
+    color: white;
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+/* Vaciado estilos */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 40px;
+  padding: 40px;
+  padding-right: 80px;
+  padding-top: 0;
+ }
+  
+   .space {
+     padding-right: 20px;
+   }
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .background:{
+    background-color: gray;
+  }
+  .navbar a {
+      color: white;
+      text-decoration: none;
+  }
+  h1 {
+    font-family: "Ogg";
+    font-size: 88px;
+    line-height: 100px;
+    color: white;
+  }
+  
+  .projects-container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .project {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  
+  .project-image {
+    max-width: 100%;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:white;
+    }
+  
+  a:hover {
+    color: grey;
+  }
+  /*meter botones*/
+  button {
+    height: 40px;
+    padding: 8px 16px;
+    border: 1px white;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: rgb(56, 56, 56);
+  color: white;
+  }
+  
+  h3 {
+      font-family: "Ogg";
+    font-size: 40px;
+    color: white;
+  }
+  /*FOOTER*/
+  footer {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 12px;
+    font-size: 32px;
+  }
+  
+  /* .footer-text {
+    margin-bottom: 32px;
+    font-size: 32px;
+  } */
+  
+  .icons-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .icons-container a {
+    text-decoration: none;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  p {
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .icons-container {
+    display: none;
+  }
+    /* OJO — Definir estilos para mobile */
+  @media only screen and (max-width: 769px)
+  {
+    .navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      padding: 0;
+      }
+      .projects-container {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      .row {
+        display: flex;
+        flex-flow: column;
+      }
+      .project {
+        width: 100%;
+        margin-bottom: 80px;
+      }
+    .projects-container {
+      padding-left: 20px;
+      padding-right: 0px;
+      padding-top: 0px;
+      width: 90%;
+    }
+      footer {
+      padding-left: 80px;
+      padding-right: 80px;
+      padding-bottom: 0;
+    }
+    h1 {
+      font-size: 40px;
+      line-height: 45px;
+      padding-top: 450px;
+      padding-left: 8px;
+      padding-right: 8px;
+      color: white;
+      text-align: center;
+    }
+      h3 {
+    font-size: 30px;
+    line-height: 32px;
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 14px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+    }
+    ol {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0;
+    }
+    ul {
+      padding: 0;
+    }
+    .project {
+      /* display: flex; */
+      align-items: center;
+    }
+    footer {
+      padding-left: 0;
+      margin-left: 20px;
+      font-size: 22px;
+      line-height: 32px;
+      margin-bottom: 20px;
+    }
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    header {
+      /* height: 100vh; */
+      width: 100%;
+      padding: 0;
+    }
+    .credit {
+      font-size: 22px;
+      line-height: 18px;
+      margin-top: 6px;
+      padding-right: 0;
+      }
+}    
+
+/*Esta media es para desktop*/
+@media only screen and (min-width: 769px)
+{
+  h1 {
+    font-family: "Ogg";
+    font-size: 100px;
+    line-height: 110px;
+    color: white;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 360px;
+    text-align: center;
+  }
+  header {
+    height: 100vh;
+    padding: 0;
+  }
+  h3 {
+    font-size: 60px;
+    margin-bottom: 0;
+    }
+/*FOOTER*/
+footer {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 12px;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-text {
+  margin-bottom: 32px;
+  font-size: 32px;
+  margin-left: 80px;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.credit{
+  margin-top: 8px;
+  font-size: 40px;
+}
+/* li {
+  line-height: 36px;
+} */
+.client {
+  line-height: 36px;
+}
+
+.icons-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icons-container a {
+  text-decoration: none;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  }
+.space {
+  padding-left: -40px;
+}
+ul {
+  padding-left: 0px;
+}
+.row {
+  margin: 20px;
+}
+.column {
+  margin-left: 60px;
+}
+.mp {
+  margin-left: 80px;
+}
+@media all and (min-width:601px){
+	header, footer {
+		cursor: url("../images/arrow_ES4.ico"), 150px, 150px;
+	}
+	header a, footer a {
+		cursor: url("../images/arrow_ES4.ico"), pointer;
+	}
+    html {
+		cursor: url("../images/arrow_ES4.ico"), pointer;
+	}
+	.home #galeria>div {
+		cursor: url("../images/arrow_ES4.ico"), w-resize;
+	}
+
+}
